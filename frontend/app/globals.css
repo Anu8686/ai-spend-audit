@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --emerald: #10B981;
+  --amber: #F59E0B;
+  --coral: #FB7185;
+  --ivory: #FAF8F3;
+  --charcoal: #1F2937;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--ivory);
+  color: var(--charcoal);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Recharts tooltip polish */
+.recharts-tooltip-wrapper {
+  outline: none !important;
+}
+
+/* Remove number input arrows */
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+input[type='number'] { -moz-appearance: textfield; }
